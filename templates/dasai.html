@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/dasai.css') }}">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaisei+Decol:wght@500&display=swap');
+    </style>
+    <title>FASHION CHECKER!</title>
+</head>
+
+<body>
+    <div class="content">
+        <header>
+            <div class="title">
+                <h1>FASHION CHECKER!</h1>
+                <p>画像をアップロードしてあなたのコーデを判定</p>
+            </div>
+        </header>
+        <main>
+            <div class="title">
+                <p>あなたの今日のコーデをCheck!</p>
+            </div>
+            <div class="code">
+                <img src="{{ url_for('static', filename='uploads/' + uploaded_image_filename) }}" alt="判定する画像">
+            </div>
+            <div class="result">
+                <p>おしゃれの才能は･･･</p>
+                <p class="nashi">ナシ</p>
+                <p>明日はもっとおしゃれになろう！</p>
+            </div>
+            <!-- Add a "Return to Top" button -->
+            <div class="return-button">
+                <a href="/">トップ画面に戻る</a>
+            </div>
+        </main>
+        <footer>
+            <p>2023@6d_TeamC</p>
+        </footer>
+    </div>
+</body>
+
+</html>

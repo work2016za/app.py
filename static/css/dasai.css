@@ -1,0 +1,87 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Kaisei Decol', serif;
+    /* box-sizing: border-box;
+    position: relative;
+    list-style: none;
+    text-decoration: none;    */
+}
+
+body {
+    background-image: url('/images/黄色.jpg');
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+}
+
+.content {
+    flex: 1;
+}
+
+header {
+    background-color: black;
+    color: white;
+    height: 100px;
+}
+
+header .title {
+    padding-top: 10px;
+}
+
+main .title {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.return-button {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+img {
+    /*size: 150px;*/
+    width: 250px;
+    height: auto;
+    display: inline-block;
+    padding: 1px;
+    background: #000000;
+    box-shadow: 5px 5px 3px #bbbbbb;
+    transform: rotate(-5deg);
+    max-width:100%;
+    height:auto;
+    object-fit: cover;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+  }
+
+.code img {
+    height: 300px;
+}
+
+.nashi {
+    font-size: 50px;
+    color: rgb(61, 61, 151);
+}
+
+footer {
+    color: white;
+    background-color: black;
+    height: 60px;
+}
+
+footer p {
+    line-height: 60px;
+}
+
+/*スマホver(480px以下)*/
+@media screen and (max-width:480px) {
+
+    header h1 {
+        font-size: 20px;
+    }
+}

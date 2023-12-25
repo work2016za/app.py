@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Kaisei+Opti&display=swap');
+  </style>
+  <title>FASHION CHECKER!</title>
+</head>
+
+<body>
+  <div class="content">
+    <header>
+      <div class="title">
+        <h1>FASHION CHECKER!</h1>
+        <p>画像をアップロードしてあなたのコーデを判定</p>
+      </div>
+    </header>
+    <!-- <main style="background-color: rgb(231, 20, 153); color: white;">
+    <p>おしゃれ判定</p>
+  </main> -->
+    <div id="mainvisual">
+      <img src="{{ url_for('static', filename='images/girl1.png') }}" alt="メインビジュアル" />
+      <form id="uploadForm" action="" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <button type="submit">判定する</button>
+      </form>
+    </div>
+    <footer>
+      <p>2023@6d_TeamC</p>
+    </footer>
+  </div>
+</body>
+
+</html>
